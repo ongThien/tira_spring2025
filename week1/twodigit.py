@@ -6,7 +6,7 @@ def count_numbers(a, b):
         current = queue.pop(0)
 
         if current > b:
-            continue  # skip anything above the upper bound
+            break  # skip anything above the upper bound
 
         if a <= current <= b:
             count += 1
